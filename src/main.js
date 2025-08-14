@@ -1,0 +1,14 @@
+import './js/header';
+import './js/age';
+import './js/number';
+import './js/paper';
+import './js/calculator';
+import './js/time';
+import './js/dino';
+import './js/fotball';
+import './js/largest-number';
+import './js/slider';
+import './js/exercises';
+import './js/footer';
+import './js/modal';
+import './js/footer-modal';
