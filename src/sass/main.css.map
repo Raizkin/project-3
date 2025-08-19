@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"main.css"}
+{"version":3,"sources":["section/_fotball.scss","main.css"],"names":[],"mappings":"AAAA;EACM,kBAAA;EACA,OAAA;EACA,MAAA;EACA,WAAA;EACA,YAAA;EACA,kBAAA;ACCN;;ADEA;EACM,YAAA;EACA,aAAA;EACA,wBAAA;EACA,yBAAA;EACA,kBAAA;EACA,gBAAA;EACA,eAAA;ACCN","file":"main.css"}
