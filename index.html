@@ -5,21 +5,64 @@
     <link rel="icon" type="image/svg+xml" href="/Vite_vanilla-app-template/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     
     <script type="module" crossorigin src="/Vite_vanilla-app-template/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Vite_vanilla-app-template/assets/index-b090aafe.css">
+    <link rel="stylesheet" href="/Vite_vanilla-app-template/assets/index-c2b6145d.css">
   </head>
   <body>
-
     <!-- Loads the specified .html file -->
-      
-      
-      
-      
-      
-      
-      
-      <section class="football">
+    
+    
+    <section class="number">
+  <div class="container">
+    <h2 class="number__title">Вгадай число, яке загадав комп’ютер</h2>
+
+    <form class="number__form">
+      <input placeholder="Введіть число" class="number__input" />
+      <button type="submit" class="number__btn">
+        <img src="../img/loope.svg" alt="" />
+      </button>
+    </form>
+    <p class="number__subtitle">Вітаю, ви вгадали число! (number)</p>
+    <hr class="number__hr" />
+  </div>
+</section>
+    
+    <section class="calculator">
+  <div class="container">
+    <h2 class="calculator__title">Калькулятор</h2>
+    <input
+      type="number"
+      class="calculator__input-first"
+      placeholder="Введіть число"
+    />
+    <div class="calculator_operators">
+      <button type="button" class="calculator__btn-plus">+</button>
+      <button type="button" class="calculator__btn-minus">-</button>
+      <button type="button" class="calculator__btn-multiply">*</button>
+      <button type="button" class="calculator__btn-divide">/</button>
+    </div>
+    <input
+      type="number"
+      class="calculator__input-second"
+      placeholder="Введіть число"
+    />
+    <button type="button" class="calculator_btn-eqveals">=</button>
+    <input
+  type="text"
+  class="calculator__input-third"
+  placeholder="Результат"
+  readonly
+/>
+    
+    
+    <section class="football">
 
   <h2 class="football__title">Футбол</h2>
 
@@ -28,12 +71,54 @@
 
 </section>
 
-      
-      
-      
-      
-      
-      ENOENT: no such file or directory, open '/home/runner/work/project-3/project-3/src/partials/footer-modal.html'
+    
+    
+    
+    <section class="footer">
+  <div class="container">
+    <img src="images/logo.png" alt="Coding Magic logo" class="footer_logo" />
+    <address class="footer_contacts">
+      <ul class="footer_list">
+        <li class="footer_item">
+          <a href="tel:+381234567890" class="footer_tel">Тел: +38 (123) 456 78 90</a>
+        </li>
+        <li class="footer_item">
+          <a href="mailto:codingmagic@gmail.com" class="footer_email">E-Mail: codingmagic@gmail.com</a>
+        </li>
+        <li class="footer_item">
+          <a href="https://facebook.com/CodingMagic" target="_blank" class="footer_facebook">Facebook: CodingMagic</a>
+        </li>
+        <li class="footer_item">
+          <a href="https://twitter.com/CodingMagic" target="_blank" class="footer_twitter">Twitter: CodingMagic</a>
+        </li>
+        <li class="footer_item">
+          <a href="https://instagram.com/CodingMagic" target="_blank" class="footer_instagram">Instagram: CodingMagic</a>
+        </li>
+      </ul>
+    </address>
+    <form class="footer_form" id="subscribe-form">
+      <input 
+        type="email" 
+        class="footer_input" 
+        placeholder="Ваш e-mail..." 
+        required 
+      />
+      <button type="submit" class="footer_btn">Підписатись</button>
+    </form>
+    <p class="footer_text">
+      *Підписавшись, Ви зможете отримувати інформацію про новинки на сайті
+    </p>
+  </div>
+</section>
+    
+    <div class="modal-footer" id="subscribe-modal">
+  <button class="modal-footer__close" id="modal-close"></button>
+  <h3 class="modal-footer__text">Дякую за підписку!</h3>
+  <img src="img/sword.svg" alt="sword" class="modal-footer__sword" />
+  <img src="img/puzzle.svg" alt="puzzle" class="modal-footer__puzzle" />
+  <img src="img/circle.svg" alt="circle" class="modal-footer__circle" />
+  <img src="img/games.svg" alt="games" class="modal-footer__games" />
+</div>
     
   </body>
 </html>
