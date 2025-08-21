@@ -1,0 +1,63 @@
+.number {
+
+
+    &__title {
+        color: #000;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.25;
+        margin-top: 36px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &__form {
+        position: absolute;
+    }
+
+    &__input {
+        background: #D7D7D7;
+        color: #7E7E7E;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.25;
+        display: inline-flex;
+        padding: 10px 43px 9px 10px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 20px 20px 20px 20px;
+
+    }
+
+    &__btn {
+        background: #000;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline-flex;
+        padding: 10px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 0 20px 20px 0;
+
+    }
+
+
+
+    &__subtitle {
+        color: #039900;
+        text-align: right;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.25;
+    }
+
+    &__hr {
+        width: 536px;
+        stroke-width: 1px;
+        stroke: #000;
+    }
+
+}
