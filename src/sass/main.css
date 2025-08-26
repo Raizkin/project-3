@@ -14,7 +14,6 @@ button {
 }
 
 img {
-  width: 100%;
   max-width: 100%;
   height: auto;
   display: block;
@@ -34,9 +33,10 @@ p {
 }
 
 .container {
-  width: 1090px;
+  max-width: 1091px;
   margin: 0px auto;
-  padding: 0 20px;
+  padding: 0px 15px;
+  outline: 1px solid red;
 }
 
 body {
@@ -47,18 +47,33 @@ body {
   background-position: center;
 }
 
+.number {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+.number__box {
+  width: 576px;
+  margin: 0 auto;
+}
 .number__title {
   color: #000;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.25;
-  margin-top: 36px;
   display: flex;
   justify-content: center;
   text-align: center;
+  margin-bottom: 36px;
+}
+.number__box-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .number__form {
-  position: absolute;
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
 }
 .number__input {
   background: #D7D7D7;
@@ -70,11 +85,12 @@ body {
   padding: 10px 43px 9px 10px;
   align-items: flex-start;
   gap: 10px;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 0px 0px 20px;
+  border-right: none;
+  border: none;
 }
 .number__btn {
   background: #000;
-  position: absolute;
   top: 0;
   right: 0;
   display: inline-flex;
@@ -83,20 +99,32 @@ body {
   gap: 10px;
   border-radius: 0 20px 20px 0;
 }
-.number__subtitle {
-  color: #039900;
-  text-align: right;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.25;
-}
-.number__hr {
+.number__linia {
   width: 536px;
+  height: 0;
   stroke-width: 1px;
   stroke: #000;
 }
 
+.calculator {
+  padding-bottom: 36px;
+}
+.calculator__boxing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 38px;
+  margin-top: 36px;
+}
+.calculator__title {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 .calculator__input-first {
   color: #7E7E7E;
   font-size: 12px;
@@ -109,6 +137,13 @@ body {
   padding: 10px 20px;
   align-items: flex-start;
   gap: 10px;
+  border: none;
+}
+.calculator__operators {
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 25px);
+  grid-gap: 10px;
 }
 .calculator__btn-plus {
   color: #FFF;
@@ -179,11 +214,12 @@ body {
   line-height: normal;
   border-radius: 20px;
   background: #D7D7D7;
-  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.25);
   display: inline-flex;
   padding: 10px 20px;
   align-items: flex-start;
   gap: 10px;
+  border: none;
 }
 .calculator__btn-eqveals {
   color: #FFF;
@@ -204,15 +240,12 @@ body {
   color: #7E7E7E;
   font-family: "Montserrat Alternates";
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
-  display: inline-flex;
   padding: 10px 20px;
-  align-items: flex-start;
-  gap: 10px;
   border-radius: 20px;
   background: #D7D7D7;
+  border: none;
 }
 
 .football__ball {
@@ -232,4 +265,73 @@ body {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+}
+
+.footer {
+  padding-top: 61px;
+  padding-bottom: 63px;
+}
+.footer__box {
+  display: flex;
+  align-items: center;
+}
+.footer__logo {
+  width: 165px;
+  height: 70px;
+  flex-shrink: 0;
+}
+.footer__list {
+  margin-left: 185px;
+  margin-right: 187px;
+}
+.footer__link {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 170%;
+}
+.footer__wrap {
+  display: flex;
+}
+.footer__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.footer__input {
+  color: #7E7E7E;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 20px;
+  background: #D7D7D7;
+  display: inline-flex;
+  padding: 10px 80px 10px 10px;
+  align-items: flex-start;
+  gap: 10px;
+  border: none;
+  margin-right: 36px;
+}
+.footer__btn {
+  color: #FFF;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  display: inline-flex;
+  padding: 10px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 20px;
+  background: #000;
+}
+.footer__text {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 6px;
+  font-weight: 400;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
