@@ -13,7 +13,7 @@
     />
     
     <script type="module" crossorigin src="/project-3/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-3/assets/index-35628a54.css">
+    <link rel="stylesheet" href="/project-3/assets/index-71b11273.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
@@ -21,45 +21,58 @@
     
     <section class="number">
   <div class="container">
-    <h2 class="number__title">Вгадай число, яке загадав комп’ютер</h2>
-
-    <form class="number__form">
-      <input placeholder="Введіть число" class="number__input" />
-      <button type="submit" class="number__btn">
-        <img src="../img/loope.svg" alt="" />
-      </button>
-    </form>
-    <p class="number__subtitle">Вітаю, ви вгадали число! (number)</p>
-    <hr class="number__hr" />
+    <div class="number__box">
+      <h2 class="number__title">Вгадай число, яке загадав комп’ютер</h2>
+      <div class="number__box-form">
+        <form class="number__form">
+          <input placeholder="Введіть число (до 15)" class="number__input" />
+          <button type="submit" class="number__btn">
+            <img src="../img/loope.svg" alt="Пошук" />
+          </button>
+        </form>
+        <p class="number__subtitle-first"></p>
+      </div>
+      <div class="number__linia"></div>
+    </div>
   </div>
 </section>
+
     
     <section class="calculator">
   <div class="container">
-    <h2 class="calculator__title">Калькулятор</h2>
-    <input
-      type="number"
-      class="calculator__input-first"
-      placeholder="Введіть число"
-    />
-    <div class="calculator_operators">
-      <button type="button" class="calculator__btn-plus">+</button>
-      <button type="button" class="calculator__btn-minus">-</button>
-      <button type="button" class="calculator__btn-multiply">*</button>
-      <button type="button" class="calculator__btn-divide">/</button>
+    <div class="calculator__box">
+      <h2 class="calculator__title">Калькулятор</h2>
+      <div class="calculator__boxing">
+      <input
+        class="calculator__input-first"
+        placeholder="Введіть число"
+      />
+      <div>
+      <div class="calculator__operators">
+        <button type="button" class="calculator__btn-plus">+</button>
+        <button type="button" class="calculator__btn-minus">-</button>
+        <button type="button" class="calculator__btn-multiply">*</button>
+        <button type="button" class="calculator__btn-divide">/</button>
+      </div>
+      </div>
+      <input
+        class="calculator__input-second"
+        placeholder="Введіть число"
+      />
+      <button type="button" class="calculator__btn-eqveals">=</button>
+      <input
+        type="text"
+        class="calculator__input-third"
+        placeholder="Результат"
+        readonly
+      />
+      </div>
     </div>
-    <input
-      type="number"
-      class="calculator__input-second"
-      placeholder="Введіть число"
-    />
-    <button type="button" class="calculator_btn-eqveals">=</button>
-    <input
-  type="text"
-  class="calculator__input-third"
-  placeholder="Результат"
-  readonly
-/>
+    </div>
+  </div>
+</section>
+
+
     
     
     <section class="football">
@@ -76,49 +89,53 @@
     
     <section class="footer">
   <div class="container">
-    <img src="images/logo.png" alt="Coding Magic logo" class="footer_logo" />
-    <address class="footer_contacts">
-      <ul class="footer_list">
-        <li class="footer_item">
-          <a href="tel:+381234567890" class="footer_tel">Тел: +38 (123) 456 78 90</a>
+    <div class="footer__box">
+    <img src="../img/logo.png" alt="Coding Magic logo" class="footer__logo" />
+    <address class="footer__contacts">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="tel:+381234567890" class="footer__link">Тел: +38 (123) 456 78 90</a>
         </li>
-        <li class="footer_item">
-          <a href="mailto:codingmagic@gmail.com" class="footer_email">E-Mail: codingmagic@gmail.com</a>
+        <li class="footer__item">
+          <a href="mailto:codingmagic@gmail.com" class="footer__link">E-Mail: codingmagic@gmail.com</a>
         </li>
-        <li class="footer_item">
-          <a href="https://facebook.com/CodingMagic" target="_blank" class="footer_facebook">Facebook: CodingMagic</a>
+        <li class="footer__item">
+          <a href="https://facebook.com/CodingMagic" target="_blank" class="footer__link">Facebook: CodingMagic</a>
         </li>
-        <li class="footer_item">
-          <a href="https://twitter.com/CodingMagic" target="_blank" class="footer_twitter">Twitter: CodingMagic</a>
+        <li class="footer__item">
+          <a href="https://twitter.com/CodingMagic" target="_blank" class="footer__link">Twitter: CodingMagic</a>
         </li>
-        <li class="footer_item">
-          <a href="https://instagram.com/CodingMagic" target="_blank" class="footer_instagram">Instagram: CodingMagic</a>
+        <li class="footer__item">
+          <a href="https://instagram.com/CodingMagic" target="_blank" class="footer__link">Instagram: CodingMagic</a>
         </li>
       </ul>
     </address>
-    <form class="footer_form" id="subscribe-form">
+    <div class="footer_wrap">
+    <form class="footer__form" id="subscribe-form">
       <input 
         type="email" 
-        class="footer_input" 
+        class="footer__input" 
         placeholder="Ваш e-mail..." 
         required 
       />
-      <button type="submit" class="footer_btn">Підписатись</button>
+      <button type="submit" class="footer__btn">Підписатись</button>
     </form>
-    <p class="footer_text">
+    <p class="footer__text">
       *Підписавшись, Ви зможете отримувати інформацію про новинки на сайті
     </p>
+    </div>
+    </div>
   </div>
 </section>
     
-    <div class="modal-footer" id="subscribe-modal">
+    <!-- <div class="modal-footer" id="subscribe-modal">
   <button class="modal-footer__close" id="modal-close"></button>
   <h3 class="modal-footer__text">Дякую за підписку!</h3>
   <img src="img/sword.svg" alt="sword" class="modal-footer__sword" />
   <img src="img/puzzle.svg" alt="puzzle" class="modal-footer__puzzle" />
   <img src="img/circle.svg" alt="circle" class="modal-footer__circle" />
   <img src="img/games.svg" alt="games" class="modal-footer__games" />
-</div>
+</div> -->
     
   </body>
 </html>
