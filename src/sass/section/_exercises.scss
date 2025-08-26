@@ -1,0 +1,74 @@
+.exercises {
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+&__list {
+    width: 259px;
+    height: 780px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 36px;
+    column-gap: 59px;
+    width: 577px;
+    margin-bottom: 36px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+&__item {
+    background-color: #d9d9d9;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+&__name {
+    color: #000000;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+&__surname {
+    color: #000000;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+&__born {
+    color: #000000;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+&__dead {
+    color: #000000;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+
+
+
+&__button {
+    color: #ffffff;
+    background-color: #000000;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.25;
+    padding: 10px 20px;
+    border-radius: 20px;     
+    &:hover {
+        background-color: #262525;
+} 

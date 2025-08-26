@@ -1,16 +1,30 @@
-.football__ball {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 40px;
-      height: 40px;
-      transition: all 1s;
+.football {
+    text-align: center;
+    padding: 40px 20px;
 }
 
-.football__box {
-width: 720px;
-height: 220px;
-border-radius: 37px;
-border: 2px solid #000;
-background: #5ABB58;
+&__title { 
+    font-size: 24px;
+    margin-bottom: 20px; 
 }
+
+&__field {
+    width: 100%;
+    max-width: 720px;
+    height: 200px;
+    background: #5abb58;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+&__ball {
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
