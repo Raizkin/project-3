@@ -49,3 +49,6 @@ btnEquals.addEventListener('click', () => {
 
   resultInput.value = result;
 });
+
+
+// finish
