@@ -47,6 +47,45 @@ body {
   background-position: center;
 }
 
+.header {
+  padding-top: 23px;
+  padding-bottom: 22px;
+}
+.header_item:first-child {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.header_item:last-child {
+  color: #000;
+  font-family: Sacramento;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.header_text {
+  color: #000;
+  text-align: right;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.nav_item {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .number__title {
   color: #000;
   font-size: 16px;

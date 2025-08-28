@@ -1,0 +1,45 @@
+.header {
+    padding-top: 23px;
+    padding-bottom: 22px;
+
+    &_item:first-child {
+        color: #000;
+font-family: "Montserrat Alternates";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    }
+
+    &_item:last-child {
+        color: #000;
+font-family: Sacramento;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    }
+
+    &_text {
+        color: #000;
+text-align: right;
+font-family: "Montserrat Alternates";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    }
+}
+
+.nav {
+
+    &_item {
+        color: #000;
+font-family: "Montserrat Alternates";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    }
+}
+
