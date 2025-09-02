@@ -99,12 +99,6 @@ body {
   gap: 10px;
   border-radius: 0 20px 20px 0;
 }
-.number__linia {
-  width: 536px;
-  height: 0;
-  stroke-width: 1px;
-  stroke: #000;
-}
 
 .calculator {
   padding-bottom: 36px;
