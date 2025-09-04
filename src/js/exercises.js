@@ -85,6 +85,8 @@ const scientists = [
     } 
 ];
 
+const findBtn = document.querySelectorAll(".exercises__button")
+
 const listRef = document.querySelector(".exercises__list")
 console.log(listRef);
 
@@ -97,5 +99,49 @@ const createMarkUpItem = arr => {
   <p class="exercises__dead">${dead}</p>
 </li>`).join('')
 }
+
+findBtn.forEach((findBtn) => {
+    findBtn.addEventListener("click", (event) => {
+        const action = event.currentTarget.dataset.action;
+        switch (action) {
+            case "born-19-stolittya":
+                const nineteenStolittya = scientists.filter((s) => s.born >= 1800 && s.born < 1900);
+                createMarkUpItem(nineteenStolittya);
+                break;
+            case "albert-born-year":
+                const bornAlbert = scientists.find((s) => s.name === "Albert");
+                alert(`Albert Einstein народився у ${bornAlbert.born} році`); 
+                break;
+            case "alphabet":
+                const alphabetSort = [...scientists].sort((a, b) => a.name.localeCompare(b.name));
+                createMarkUpItem(alphabetSort);
+                break;
+            case "surname-first-c":
+                const findCSurname = scientists.filter((s) => s.surname.startsWith("C"));
+                createMarkUpItem(findCSurname);
+                break;
+            case "years-lived":
+                const ageSort = [...scientists].sort((a, b) => (b.dead - b.born) - (a.dead - a.born));
+                createMarkUpItem(ageSort);
+                break;
+            case "a-leter-surname":
+                const findLetterA = scientists.filter((s) => !s.name.startsWith("A"));
+                createMarkUpItem(findLetterA);
+                break;
+            case "dead-last":
+                const findLatestBorn = [...scientists].sort((a, b) => b.born - a.born);
+                alert(`${findLatestBorn[0].name} ${findLatestBorn[0].surname} народився найпізніше(у ${findLatestBorn[0].born} році)`);
+                break;
+            case "stary-molodyi":
+                const findStaryMolodyi = [...scientists].sort((a, b) => (b.dead - b.born) - (a.dead - a.born));
+                alert(`${find[0].name} ${findStaryMolodyi[0].surname} прожив найдовше і прожив найменше(${findStaryMolodyi[0].dead - findStaryMolodyi[0].born} років), а ${findStaryMolodyi[findStaryMolodyi.length - 1].name} ${findStaryMolodyi[findStaryMolodyi.length - 1].surname} прожив найменше(${findStaryMolodyi[findStaryMolodyi.length - 1].dead - findStaryMolodyi[findStaryMolodyi.length - 1].born} років)`);
+                break;
+            case "surname":
+                const findSurname = scientists.filter((s) => s.name[0] === s.surname[0]);
+                createMarkUpItem(findSurname);
+                break;
+        };        
+    });
+});
 
 createMarkUpItem(scientists)

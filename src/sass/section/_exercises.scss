@@ -1,10 +1,10 @@
 .exercises {
     padding-top: 36px;
     padding-bottom: 36px;
+    height: 650px;
 
 &__list {
     width: 259px;
-    height: 780px;
     display: flex;
     flex-wrap: wrap;
     row-gap: 36px;
@@ -14,16 +14,18 @@
     margin-right: auto;
     margin-left: auto;
     justify-content: center;
-    align-items: center;
 }
 
 
 &__btnlist {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    list-style: none;
+    user-select: none;
 }
 
 
@@ -36,6 +38,7 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
+    user-select: none;
 }
 
 &__name {
@@ -43,6 +46,7 @@
     font-size: 8px;
     font-weight: 400;
     line-height: 1.7;
+    user-select: none;
 }
 
 &__surname {
@@ -50,6 +54,7 @@
     font-size: 8px;
     font-weight: 400;
     line-height: 1.7;
+    user-select: none;
 }
 
 &__born {
@@ -57,6 +62,7 @@
     font-size: 8px;
     font-weight: 400;
     line-height: 1.7;
+    user-select: none;
 }
 
 &__dead {
@@ -64,6 +70,7 @@
     font-size: 8px;
     font-weight: 400;
     line-height: 1.7;
+    user-select: none;
 }
 
 &__title {
@@ -73,6 +80,7 @@
     line-height: 1.25;
     text-align: center;
     margin-bottom: 36px;
+    user-select: none;
 }
 
 
@@ -84,7 +92,8 @@
     font-weight: 400;
     line-height: 1.25;
     padding: 10px 20px;
-    border-radius: 20px;  
+    border-radius: 20px;
+    user-select: none; 
     transition: transform 0.3s ease;   
     &:hover {
         background-color: #262525;
