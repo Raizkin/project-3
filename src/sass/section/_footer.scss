@@ -1,0 +1,95 @@
+.footer {
+padding-top: 61px;
+padding-bottom: 63px;
+    &__box {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 165px;
+        height: 70px;
+        flex-shrink: 0;
+      
+
+    }
+
+
+    &__contacts {
+        
+    }
+
+    &__list {
+        margin-left: 185px;
+        margin-right: 187px;
+     
+    }
+
+    &__item {}
+
+
+    &__link {
+        color: #000;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 170%;
+
+    }
+
+&__wrap {
+   display: flex; 
+}
+
+
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 10px;
+    }
+
+    &__input {
+        color: #7E7E7E;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-weight: 400;
+        border-radius: 20px;
+        background: #D7D7D7;
+        display: inline-flex;
+        padding: 10px 80px 10px 10px;
+        align-items: flex-start;
+        gap: 10px;
+        border: none;
+        margin-right: 36px;
+    }
+
+    &__btn {
+        color: #FFF;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: normal;
+        display: inline-flex;
+        padding: 10px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 20px;
+        background: #000;
+
+    }
+
+
+    &__text {
+        color: #000;
+        font-family: "Montserrat Alternates";
+        font-size: 6px;
+        font-weight: 400;
+        text-align: center;
+
+    }
+
+}
+
+// finish
