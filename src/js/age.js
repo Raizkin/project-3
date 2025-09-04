@@ -5,6 +5,7 @@ let res = document.getElementById("res");
 function checkYear() {
   let year = yearInput.value.trim();
 
+
   res.className = "";
 
   if (year === "") {
