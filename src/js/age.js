@@ -5,7 +5,7 @@ let res = document.getElementById("res");
 function checkYear() {
   let year = yearInput.value.trim();
 
-  // Скидаємо попередні стилі
+
   res.className = "";
 
   if (year === "") {
