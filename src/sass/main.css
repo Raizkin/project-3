@@ -1,3 +1,68 @@
+.age {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.age__title {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.age hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 15px auto 25px;
+  width: 60%;
+}
+
+.age__text {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+#yearInput {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px 0 0 25px;
+  outline: none;
+  background: #e6e6e6;
+  width: 200px;
+}
+
+#checkBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#checkBtn:hover {
+  background: #444;
+}
+
+#res {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#res.success {
+  color: green;
+}
+
+#res.error {
+  color: red;
+}
+
 .football__ball {
   position: absolute;
   left: 0;
