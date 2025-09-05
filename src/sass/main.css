@@ -313,6 +313,9 @@ body {
 .fotball__title {
   font-size: 24px;
   margin-bottom: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .fotball__field {
   width: 100%;
@@ -327,10 +330,13 @@ body {
   cursor: pointer;
 }
 .fotball__ball {
+  position: absolute;
   width: 50px;
   height: 50px;
+  pointer-events: none;
+  transition: left 0.5s ease, top 0.5s ease;
   transform: translate(-50%, -50%);
-  position: absolute;
+  caret-color: transparent;
 }
 
 .largest-number__border {
@@ -353,6 +359,10 @@ body {
   margin-top: 36px;
   line-height: normal;
   text-align: center;
+  caret-color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .largest-number__text {
   color: #000;
@@ -362,6 +372,10 @@ body {
   margin-bottom: 36px;
   line-height: normal;
   text-align: center;
+  caret-color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .largest-number__input {
   width: 135px;
@@ -374,15 +388,35 @@ body {
   outline: none;
   padding: 10px 20px;
   margin-left: 20;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.largest-number__num {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: right;
+  margin-top: 36px;
+  margin-left: 5px;
+  align-items: center;
+  justify-content: center;
+  caret-color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .exercises {
   padding-top: 36px;
   padding-bottom: 36px;
+  height: 650px;
 }
 .exercises__list {
   width: 259px;
-  height: 780px;
   display: flex;
   flex-wrap: wrap;
   row-gap: 36px;
@@ -393,14 +427,18 @@ body {
   margin-right: auto;
   margin-left: auto;
   justify-content: center;
-  align-items: center;
 }
 .exercises__btnlist {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  list-style: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .exercises__item {
   background-color: #d9d9d9;
@@ -411,30 +449,45 @@ body {
   justify-content: center;
   display: flex;
   flex-direction: column;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .exercises__name {
   color: #000000;
   font-size: 8px;
   font-weight: 400;
   line-height: 1.7;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .exercises__surname {
   color: #000000;
   font-size: 8px;
   font-weight: 400;
   line-height: 1.7;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .exercises__born {
   color: #000000;
   font-size: 8px;
   font-weight: 400;
   line-height: 1.7;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .exercises__dead {
   color: #000000;
   font-size: 8px;
   font-weight: 400;
   line-height: 1.7;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .exercises__title {
   color: #000000;
@@ -443,6 +496,9 @@ body {
   line-height: 1.25;
   text-align: center;
   margin-bottom: 36px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .exercises__button {
   color: #ffffff;
@@ -453,6 +509,9 @@ body {
   line-height: 1.25;
   padding: 10px 20px;
   border-radius: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   transition: transform 0.3s ease;
 }
 .exercises__button:hover {
