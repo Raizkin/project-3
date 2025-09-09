@@ -1,9 +1,56 @@
+@charset "UTF-8";
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1091px;
+  margin: 0px auto;
+  padding: 0px 15px;
+  outline: 1px solid red;
+}
+
+body {
+  background-image: url(../img/backphoto.png);
+  font-family: "Montserrat Alternates";
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 .age {
   text-align: center;
   padding: 40px 20px;
-  max-width: 500px;
-  width: 100%;
 }
 
 .age__title {
@@ -64,60 +111,6 @@
   color: red;
 }
 
-.football__ball {
-  position: absolute;
-  left: 0;
-=======
-@charset "UTF-8";
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-button {
-  border: none;
-  cursor: pointer;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h5,
-h6,
-p {
-  margin: 0;
-  padding: 0;
-  font-weight: 400;
-}
-
-.container {
-  max-width: 1091px;
-  margin: 0px auto;
-  padding: 0px 15px;
-  outline: 1px solid red;
-}
-
-body {
-  background-image: url(../img/backphoto.png);
-  font-family: "Montserrat Alternates";
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 .number {
   padding-top: 36px;
   padding-bottom: 36px;
@@ -162,7 +155,6 @@ body {
 }
 .number__btn {
   background: #000;
-
   top: 0;
   right: 0;
   display: inline-flex;
@@ -312,6 +304,29 @@ body {
   border-radius: 20px;
   background: #D7D7D7;
   border: none;
+}
+
+.time {
+  text-align: center;
+}
+
+.time__inp {
+  border-radius: 20px 0 0 20px;
+  padding: 10px 45px 10px 10px;
+  width: 150px;
+  height: 35px;
+  background: #d7d7d7;
+  border: none;
+}
+
+.time__btn {
+  border-radius: 0 20px 20px 0;
+  width: 100px;
+  height: 55px;
+  background-color: black;
+  color: white;
+  display: inline-block;
+  margin: 0;
 }
 
 .fotball {
