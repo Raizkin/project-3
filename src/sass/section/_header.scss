@@ -1,0 +1,108 @@
+.header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    background: #FFF;
+    width: 100%;
+
+    &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+&__logo {
+    width: 93px;
+height: 38.145px;
+}
+
+    &__btn {
+        width: 40px;
+height: 20px;
+    position: relative;
+    background-color: transparent;
+    border-radius: 11px;
+background: #7A7A7A;
+border: none;
+}
+
+&__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+&__tumbler {
+    background-color: #FFFFFF;
+    border-radius: 50%;
+width: 20.5px;
+height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    outline: 1px solid #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+&__image {
+    width: 20px;
+    height: 20px;
+}
+
+&__button {
+    color: #000;
+font-size: 12px;
+font-weight: 400;
+line-height: 1.25;
+background-color: transparent;
+border: none;
+}
+
+}
+
+.nav {
+    &__list {
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 50px;
+    margin-right: 361px;
+    margin-left: 81px;
+}
+
+
+&__text {
+    color: #000;
+font-size: 12px;
+font-weight: 400;
+line-height: 1.25;
+}
+
+&__item:nth-child(2) {
+    width: 97px;
+}
+
+&__link {
+    color: #000;
+font-size: 12px;
+font-weight: 400;
+line-height: 1.25;
+ text-decoration: none;
+}
+}
+
+.active {
+    background-color: #7A7A7A;
+}
+
+.active .header__tumbler {
+    transform: translateX(19px);
+    background-color: #000000;
+}
+
+.dark {
+    background-color: gray;
+}

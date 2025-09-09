@@ -1,0 +1,121 @@
+.backdrop {
+        width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(15, 15, 15, 0.212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.modal {
+border-radius: 20px;
+background: #FFF;
+padding: 47px 92px;
+position: relative;
+
+&__form {
+    margin-top: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+&__text {
+    color: #000;
+text-align: center;
+font-size: 12px;
+font-weight: 400;
+line-height: normal;
+}
+
+&__paragraph {
+    color: #000;
+text-align: center;
+font-size: 12px;
+font-weight: 400;
+line-height: normal;
+}
+
+&__input {
+color: #7E7E7E;
+font-size: 12px;
+font-weight: 400;
+line-height: normal;
+border-radius: 20px;
+background: #D7D7D7;
+padding: 10px 10px 10px 10px;
+border: none;
+width: 169px;
+margin-top: 18px;
+margin-bottom: 18px;
+}
+
+&__btn {
+    color: #FFF;
+font-size: 12px;
+font-weight: 400;
+line-height: normal;
+padding: 10px 20px;
+border-radius: 20px;
+background: #000;
+box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+}
+}
+
+.button__close {
+    background-color: transparent;
+    position: absolute;
+    left: 567px;
+    bottom: 269px;
+    opacity: 70%;
+}
+
+.button__svg {
+    width: 30px;
+height: 30px;
+}
+
+.modal__swordimg {
+    width: 30px;
+height: 30px;
+position: absolute;
+left: 41px;
+bottom: 132px;
+}
+
+.modal__puzzleimg {
+    width: 30px;
+height: 30px;
+position: absolute;
+left: 85px;
+bottom: 56px;
+}
+
+.modal__gameimg {
+    width: 30px;
+height: 30px;
+position: absolute;
+left: 505px;
+bottom: 132px;
+}
+
+.modal__tictacimg {
+    width: 30px;
+height: 30px;
+position: absolute;
+left: 461px;
+bottom: 56px;
+}

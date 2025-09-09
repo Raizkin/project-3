@@ -1,0 +1,84 @@
+.paper {
+
+    padding-top: 72px;
+    padding-bottom: 72px;
+
+    &__box {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    position: relative;
+}
+
+&__paragraph {
+    color: #000;
+font-size: 16px;
+font-weight: 400;
+line-height: normal;
+width: 195px;
+text-align: center;
+margin-left: 448px;
+margin-top: 36px;
+}
+
+&__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 38px;
+    margin-top: 36px;
+     margin-bottom: 36px;
+}
+
+&__listbtn {
+    padding: 8px 10px 8px 10px;
+    border-radius: 20px;
+background: #000;
+/* width: 60px;
+height: 60px; */
+}
+
+&__listimg {
+    width: 40px;
+height: 40px;
+}
+
+&__text {
+    color: #039900;
+font-size: 12px;
+font-weight: 400;
+line-height: normal;
+text-align: center;
+}
+
+&__button {
+    color: #FFF;
+font-size: 12px;
+font-weight: 400;
+line-height: normal;
+padding: 10px 20px;
+border-radius: 20px;
+background: #000;
+margin-left: 470px;
+margin-top: 36px;
+margin-bottom: 36px;
+}
+
+&__sidelist {
+    list-style: none;
+    position: absolute;
+    left: 750px;
+    bottom: 155px;
+}
+
+&__textsl {
+    color: #000;
+font-size: 12px;
+font-weight: 400;
+line-height: 20px;
+}
+}
+
+.fail .paper__button {
+    color:#990000;
+}
