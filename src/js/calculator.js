@@ -51,4 +51,3 @@ btnEquals.addEventListener('click', () => {
 });
 
 
-// finish
