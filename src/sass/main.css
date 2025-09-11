@@ -484,7 +484,7 @@ body {
   border-radius: 20px 0 0 20px;
   padding: 10px 45px 10px 10px;
   width: 150px;
-  height: 35px;
+  height: 15px;
   background: #d7d7d7;
   border: none;
 }
@@ -492,11 +492,36 @@ body {
 .time__btn {
   border-radius: 0 20px 20px 0;
   width: 100px;
-  height: 55px;
+  height: 35px;
   background-color: black;
   color: white;
   display: inline-block;
   margin: 0;
+}
+
+.dino__game {
+  position: relative;
+  width: 800px;
+  height: 200px;
+  border: 2px solid #333;
+  overflow: hidden;
+  background: #fafafa;
+}
+
+#avatar {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  width: 60px;
+  height: auto;
+}
+
+#cactus {
+  position: absolute;
+  bottom: 0;
+  left: 800px;
+  width: 40px;
+  height: auto;
 }
 
 .fotball {
