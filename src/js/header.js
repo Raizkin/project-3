@@ -10,6 +10,8 @@ console.log(tumblerRef);
 const imageRef = document.querySelector(".header__image");
 console.log(imageRef);
 
+imageRef.src = sun;
+
 buttonRef.addEventListener("click", () => {
     buttonRef.classList.toggle("active");
     document.body.classList.toggle("dark");
