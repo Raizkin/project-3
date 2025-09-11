@@ -1,3 +1,6 @@
+import moon from "../img/moon.png";
+import sun from "../img/sun.png";
+
 const buttonRef = document.querySelector(".header__btn");
 console.log(buttonRef);
 
@@ -13,8 +16,8 @@ buttonRef.addEventListener("click", () => {
     const isDark = document.body.classList.contains("dark");
     console.log(isDark);
     if(isDark) {
-        imageRef.src = "./img/moon.png"
+        imageRef.src = moon;
     } else {
-        imageRef.src = "./img/sun.png"
+        imageRef.src = sun;
     }
 });
