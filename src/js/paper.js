@@ -11,6 +11,8 @@
         const computerScore = document.querySelector(".computerscore");
         const userScore = document.querySelector(".userscore");
 
+        const spanRef = document.querySelector(".paper__btnspan")
+
         const userChoices = [stoneBtnRef, scissorsBtnRef, paperBtnRef];
         const computerChoices = ["stone", "scissors", "paper"];
 
@@ -35,6 +37,8 @@
         const randomOption = Math.floor(Math.random()*3);
         const computerChoice = computerChoices[randomOption];
         console.log(computerChoice);
+
+        spanRef.textContent = computerChoice;
 
         if(userChoice === stoneBtnRef) {
             if(computerChoice === "stone") {
