@@ -34,8 +34,6 @@ margin-top: 36px;
     padding: 8px 10px 8px 10px;
     border-radius: 20px;
 background: #000;
-/* width: 60px;
-height: 60px; */
 }
 
 &__listimg {
@@ -62,6 +60,8 @@ background: #000;
 margin-left: 470px;
 margin-top: 36px;
 margin-bottom: 36px;
+display: flex;
+flex-direction: column;
 }
 
 &__sidelist {
@@ -79,6 +79,3 @@ line-height: 20px;
 }
 }
 
-.fail .paper__button {
-    color:#990000;
-}
