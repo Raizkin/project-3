@@ -481,7 +481,7 @@ body {
   border-radius: 20px 0 0 20px;
   padding: 10px 45px 10px 10px;
   width: 150px;
-  height: 35px;
+  height: 15px;
   background: #d7d7d7;
   border: none;
 }
@@ -489,11 +489,47 @@ body {
 .time__btn {
   border-radius: 0 20px 20px 0;
   width: 100px;
-  height: 55px;
+  height: 35px;
   background-color: black;
   color: white;
   display: inline-block;
   margin: 0;
+}
+
+.dino {
+  padding-top: 35px;
+}
+
+.dino__game {
+  position: relative;
+  width: 800px;
+  height: 200px;
+  border: 2px solid #333;
+  overflow: hidden;
+  background: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dino__text {
+  display: flex;
+  justify-content: center;
+}
+
+#avatar {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  width: 60px;
+  height: auto;
+}
+
+#cactus {
+  position: absolute;
+  bottom: 0;
+  left: 800px;
+  width: 40px;
+  height: auto;
 }
 
 .fotball {
@@ -598,6 +634,102 @@ body {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+
+.team-slider {
+  text-align: center;
+  margin: 50px auto;
+  position: relative;
+}
+
+.team-slider__title {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.position {
+  position: relative;
+  overflow: hidden;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-slider__track {
+  display: flex;
+  transition: transform 0.5s ease;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-slider__slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.team-slider__photo {
+  width: 120px;
+  height: 120px;
+  background: #dcdcdc;
+  border-radius: 15px;
+  margin: 0 auto 15px;
+}
+
+.team-slider__name {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+.team-slider__info {
+  font-size: 14px;
+  color: #555;
+}
+
+.team-slider__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  color: #333;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.team-slider__btn--prev {
+  left: 200px;
+  background-color: transparent;
+}
+
+.team-slider__btn--next {
+  right: 200px;
+}
+
+.team-slider__dots {
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-slider__dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 5px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.team-slider__dot.active {
+  background: #333;
 }
 
 .exercises {
