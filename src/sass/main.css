@@ -693,7 +693,11 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+
   background: black;
+=======
+  background: none;
+
   border: none;
   font-size: 40px;
   cursor: pointer;
@@ -705,6 +709,10 @@ body {
 
 .team-slider__btn--prev {
   left: 200px;
+
+=======
+  background-color: transparent;
+
 }
 
 .team-slider__btn--next {

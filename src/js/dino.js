@@ -1,4 +1,8 @@
+
  const dino = document.getElementById("avatar");
+=======
+    const dino = document.getElementById("avatar");
+
     const cactus = document.getElementById("cactus");
 
     let isJumping = false;
