@@ -1,5 +1,5 @@
 
-      const listRef = document.querySelector(".paper__list");
+        const listRef = document.querySelector(".paper__list");
         const btnOpRef = document.querySelector(".paper__listbtn");
         
         const stoneBtnRef = document.querySelector(".stone");
@@ -7,36 +7,26 @@
         const paperBtnRef = document.querySelector(".paperop");
         const buttonRef = document.querySelector(".paper__button");
 
+        const userChoices = [stoneBtnRef, scissorsBtnRef, paperBtnRef];
+        let userChoice = null;
+        let playerScore = 0;
+        let compScore = 0;
+
+
+         userChoices.forEach(choice => {
+            choice.addEventListener("click", (event) => {
         const textRef = document.querySelector(".paper__text");
         const computerScore = document.querySelector(".computerscore");
         const userScore = document.querySelector(".userscore");
 
         const spanRef = document.querySelector(".paper__btnspan")
-
-        const userChoices = [stoneBtnRef, scissorsBtnRef, paperBtnRef];
+        
         const computerChoices = ["stone", "scissors", "paper"];
 
-        let userChoice = null;
-        let playerScore = 0;
-        let compScore = 0;
-    
-
-         userChoices.forEach(choice => {
-            choice.addEventListener("click", (event) => {
-                userChoice = event.currentTarget;
-                console.log(userChoice);
-            })
-            });
-
-            
-            buttonRef.addEventListener("click", playGame);
-
-            
-            function playGame() {
+        userChoice = event.currentTarget;
 
         const randomOption = Math.floor(Math.random()*3);
         const computerChoice = computerChoices[randomOption];
-        console.log(computerChoice);
 
         spanRef.textContent = computerChoice;
 
@@ -85,5 +75,6 @@
                 textRef.textContent = "Нічия!";
                 textRef.style.color = "grey";
             }
-        }
-            }
+        }     
+            });
+            });
