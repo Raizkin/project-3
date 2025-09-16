@@ -1,0 +1,99 @@
+.team-slider {
+text-align: center;
+  margin: 50px auto;
+  position: relative;
+}
+
+.team-slider__title {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.position {
+      position: relative;
+  overflow: hidden;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.team-slider__track {
+  display: flex;
+  transition: transform 0.5s ease;
+
+//   width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+//   position: relative;
+//   overflow: hidden;
+  
+}
+
+.team-slider__slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.team-slider__photo {
+  width: 120px;
+  height: 120px;
+  background: #dcdcdc;
+  border-radius: 15px;
+  margin: 0 auto 15px;
+}
+
+.team-slider__name {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+.team-slider__info {
+  font-size: 14px;
+  color: #555;
+}
+
+
+.team-slider__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: black;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  color: #333;
+  user-select: none;
+}
+
+.team-slider__btn--prev {
+  left: 200px;
+  
+}
+
+.team-slider__btn--next {
+  right: 200px;
+}
+
+
+.team-slider__dots {
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-slider__dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 5px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.team-slider__dot.active {
+  background: #333;
+}

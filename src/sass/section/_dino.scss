@@ -1,0 +1,35 @@
+.dino {
+      padding-top: 35px;
+    }
+    
+    .dino__game {
+      position: relative;
+      width: 800px;
+      height: 200px;
+      border: 2px solid #333;
+      overflow: hidden;
+      background: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .dino__text {
+      display: flex;
+      justify-content: center;
+    }
+
+    #avatar {
+      position: absolute;
+      bottom: 0;
+      left: 50px;
+      width: 60px;
+      height: auto;
+    }
+
+    #cactus {
+      position: absolute;
+      bottom: 0;
+      left: 800px; 
+      width: 40px;
+      height: auto;
+    }
