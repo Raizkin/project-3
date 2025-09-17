@@ -1,6 +1,6 @@
 
-.dino {
-=======
+
+
     .dino {
 
       padding-top: 35px;
@@ -37,3 +37,32 @@
       width: 40px;
       height: auto;
     }
+
+
+        #startBtn {
+          display: block;
+          margin: 20px auto;
+          padding: 12px 30px;
+          font-size: 18px;
+          font-weight: bold;
+          color: #fff;
+          background: linear-gradient(135deg, #4caf50, #2e7d32);
+          border: none;
+          border-radius: 12px;
+          cursor: pointer;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          transition: all 0.2s ease-in-out;
+        }
+
+
+
+                #startBtn:hover {
+                  background: linear-gradient(135deg, #66bb6a, #388e3c);
+                  transform: scale(1.05);
+                }
+        
+                #startBtn:active {
+                  transform: scale(0.95);
+                  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+                }
+  

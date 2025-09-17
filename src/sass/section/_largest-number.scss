@@ -1,10 +1,9 @@
 .largest-number {
     &__border {
     height: 1px;
-    width: 536px;
-    max-width: 80%;
+    width: 100%;
     background-color: black;
-    display: flex;
+   margin: 0px auto;
 }
 
 &__list {

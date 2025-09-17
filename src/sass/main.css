@@ -37,7 +37,6 @@ p {
   max-width: 1091px;
   margin: 0px auto;
   padding: 0px 15px;
-  outline: 1px solid red;
 }
 
 body {
@@ -532,6 +531,31 @@ body {
   height: auto;
 }
 
+#startBtn {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+#startBtn:hover {
+  background: linear-gradient(135deg, #66bb6a, #388e3c);
+  transform: scale(1.05);
+}
+
+#startBtn:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 .fotball {
   text-align: center;
   padding: 40px 20px;
@@ -557,7 +581,9 @@ body {
 }
 .fotball__ball {
   position: absolute;
-  width: 50px;
+  top: 20px;
+  left: 20px;
+  width: 75px;
   height: 50px;
   pointer-events: none;
   transition: left 0.5s ease, top 0.5s ease;
@@ -567,10 +593,9 @@ body {
 
 .largest-number__border {
   height: 1px;
-  width: 536px;
-  max-width: 80%;
+  width: 100%;
   background-color: black;
-  display: flex;
+  margin: 0px auto;
 }
 .largest-number__list {
   display: flex;
@@ -677,6 +702,10 @@ body {
   background: #dcdcdc;
   border-radius: 15px;
   margin: 0 auto 15px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .team-slider__name {
@@ -693,11 +722,8 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-
   background: black;
-=======
   background: none;
-
   border: none;
   font-size: 40px;
   cursor: pointer;
@@ -709,10 +735,7 @@ body {
 
 .team-slider__btn--prev {
   left: 200px;
-
-=======
   background-color: transparent;
-
 }
 
 .team-slider__btn--next {
