@@ -2,12 +2,15 @@ const userName = document.querySelector(".header__span");
 const formRef = document.querySelector(".modal__form");
 const inputRef = document.querySelector(".modal__input");
 const backdropRef = document.querySelector(".backdrop");
+console.log(backdropRef);
+
 const modalSubmit = document.querySelector(".modal__btn");
 const modalClose = document.querySelector(".button__close");
 const modal = document.querySelector(".modal");
 
 modalClose.addEventListener("click", () => {
     backdropRef.classList.add("is-hidden");
+    backdropRef.style.display = "none";
 });
 
 formRef.addEventListener("submit", onFormSubmit);
